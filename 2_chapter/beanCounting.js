@@ -2,14 +2,12 @@ function countBs(word) {
   let appers = [];
   for (let i = 0; i < word.length; i++) {
     console.log(word[i]);
-    if ((word[i] = word[i + 1])) {
+    if (word[i] === "B") {
       appers.push(word[i]);
     }
   }
   return appers.length;
 }
-
-// this thing is insane in one it should be = and the other one should be either == or ===
 
 function countChar(word, target) {
   let appers = [];
